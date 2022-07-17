@@ -29,7 +29,7 @@
   color: #000;
 }
 
-.landing {
+main .landing {
   width: 100%;
   height: 70vh;
   position: relative;
@@ -54,7 +54,7 @@
   background-repeat: no-repeat;
 }
 
-.landing .landing__navBar {
+main .landing .landing__navBar {
   width: 70vw;
   height: 10%;
   display: -webkit-box;
@@ -70,7 +70,7 @@
   top: 1vh;
 }
 
-.landing .landing__navBar .header__logo {
+main .landing .landing__navBar .header__logo {
   width: 10%;
   height: 100%;
   display: -webkit-box;
@@ -84,7 +84,25 @@
           justify-content: flex-start;
 }
 
-.landing .landing__navBar .header__items {
+main .landing .landing__navBar .hamburgerMenu {
+  width: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 0.3;
+}
+
+main .landing .landing__navBar .header__items {
   width: 70%;
   height: 100%;
   display: -webkit-box;
@@ -98,7 +116,7 @@
           justify-content: space-between;
 }
 
-.landing .landing__navBar .header__items .header__items__links {
+main .landing .landing__navBar .header__items .header__items__links {
   width: 70%;
   height: 100%;
   display: -webkit-box;
@@ -112,14 +130,14 @@
           justify-content: space-between;
 }
 
-.landing .landing__navBar .header__items .btn {
+main .landing .landing__navBar .header__items .btn {
   width: 20%;
   height: 70%;
   background-color: teal;
   color: #fff;
 }
 
-.landing .loadigContainer {
+main .landing .loadigContainer {
   width: 70vw;
   height: 90%;
   display: -webkit-box;
@@ -134,7 +152,7 @@
   position: relative;
 }
 
-.landing .loadigContainer .landing__contents {
+main .landing .loadigContainer .landing__contents {
   width: 45%;
   height: 80%;
   display: -webkit-box;
@@ -152,14 +170,14 @@
           justify-content: space-between;
 }
 
-.landing .loadigContainer .landing__contents .loading__contents__bigText {
+main .landing .loadigContainer .landing__contents .loading__contents__bigText {
   width: 50%;
   height: 50%;
   text-align: justify;
   font-size: 4rem;
 }
 
-.landing .loadigContainer .landing__contents .loading__contents__text {
+main .landing .loadigContainer .landing__contents .loading__contents__text {
   width: 75%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -170,7 +188,7 @@
   font-weight: 500;
 }
 
-.landing .loadigContainer .landing__contents .btn {
+main .landing .loadigContainer .landing__contents .btn {
   width: 229px;
   height: 46px;
   background-color: teal;
@@ -191,7 +209,7 @@
   font-weight: bold;
 }
 
-.landing .loadigContainer .landing__contents .btn span {
+main .landing .loadigContainer .landing__contents .btn span {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -214,7 +232,7 @@
   font-weight: bold;
 }
 
-.landing .loadigContainer .landing__imageContainer {
+main .landing .loadigContainer .landing__imageContainer {
   width: 470px;
   height: 484px;
   position: relative;
@@ -230,7 +248,7 @@
           justify-content: flex-end;
 }
 
-.landing .loadigContainer .landing__imageContainer::after {
+main .landing .loadigContainer .landing__imageContainer::after {
   width: 297px;
   height: 228px;
   position: absolute;
@@ -241,13 +259,13 @@
   left: -5%;
 }
 
-.landing .loadigContainer .landing__imageContainer img {
+main .landing .loadigContainer .landing__imageContainer img {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.humanResouresContainer {
+main .humanResouresContainer {
   width: 100%;
   height: 70vh;
   display: -webkit-box;
@@ -261,7 +279,7 @@
           justify-content: center;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam {
+main .humanResouresContainer .humanResouresContainer__aboutTeam {
   width: 60%;
   height: 70%;
   display: -webkit-box;
@@ -279,7 +297,7 @@
           justify-content: space-between;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -290,23 +308,23 @@
           align-items: center;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:first-of-type {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:first-of-type {
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
   font-weight: bold;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:nth-child(2) {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:nth-child(2) {
   font-family: Montserrat-semi-bold;
   font-weight: bold;
   font-size: 2rem;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
   width: 100%;
   height: 82%;
   display: -webkit-box;
@@ -320,7 +338,7 @@
           justify-content: space-between;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
   width: 40%;
   height: 100%;
   display: -webkit-box;
@@ -336,7 +354,7 @@
   background-color: teal;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -352,12 +370,12 @@
           box-sizing: border-box;
   padding: 2rem;
   color: teal;
-  text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
+  text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
   font-family: Montserrat;
   font-size: 13rem;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
   width: 80%;
   height: 20%;
   color: #fff;
@@ -366,7 +384,7 @@
   font-size: 1.5rem;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster {
   width: 60%;
   height: 100%;
   display: -webkit-box;
@@ -384,8 +402,8 @@
           justify-content: space-between;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -396,21 +414,21 @@
           align-items: center;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture img,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture img {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture img,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture img {
   width: 100%;
   height: 100%;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::before,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::before {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::before,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::before {
   width: 100%;
   height: 100%;
   content: attr(data-name);
@@ -443,8 +461,8 @@
   opacity: 0;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::after,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::after {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::after,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::after {
   width: 100%;
   height: 100%;
   content: attr(data-job);
@@ -464,18 +482,18 @@
   font-family: Montserrat-bold;
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::after,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::after {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::after,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::after {
   opacity: 1;
   background-color: rgba(0, 128, 128, 0.432);
 }
 
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::before,
-.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::before,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
   opacity: 1;
 }
 
-.customerCommentsContainerMaster {
+main .customerCommentsContainerMaster {
   width: 100%;
   height: 70vh;
   display: -webkit-box;
@@ -490,7 +508,7 @@
   position: relative;
 }
 
-.customerCommentsContainerMaster .btn-container {
+main .customerCommentsContainerMaster .btn-container {
   width: 5rem;
   height: 3rem;
   position: absolute;
@@ -507,7 +525,7 @@
           justify-content: space-between;
 }
 
-.customerCommentsContainerMaster .btn-container button {
+main .customerCommentsContainerMaster .btn-container button {
   width: calc(50% - 0.4rem);
   height: calc(100% - 0.4rem);
   background-color: teal;
@@ -517,7 +535,7 @@
   font-family: Montserrat;
 }
 
-.customerCommentsContainerMaster .mainContainer {
+main .customerCommentsContainerMaster .mainContainer {
   width: 60%;
   height: 70%;
   display: -webkit-box;
@@ -535,7 +553,7 @@
           justify-content: space-between;
 }
 
-.customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about {
+main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -546,23 +564,23 @@
           align-items: center;
 }
 
-.customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span:first-of-type {
+main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span:first-of-type {
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
 }
 
-.customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span {
+main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span {
   font-weight: bold;
 }
 
-.customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span:nth-child(2) {
+main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span:nth-child(2) {
   font-family: Montserrat-semi-bold;
   font-weight: bold;
   font-size: 2rem;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment {
+main .customerCommentsContainerMaster .mainContainer .customers_comment {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -576,7 +594,7 @@
           justify-content: space-between;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item {
   width: 23%;
   height: 100%;
   display: -webkit-box;
@@ -603,16 +621,16 @@
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .swiper-slide {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .swiper-slide {
   width: 23% !important;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item:hover {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top {
   width: 100%;
   height: 40%;
   display: -webkit-box;
@@ -626,7 +644,7 @@
           justify-content: space-between;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left {
   width: 25%;
   height: 50%;
   display: -webkit-box;
@@ -640,7 +658,7 @@
           justify-content: center;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left img {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -655,7 +673,7 @@
           justify-content: center;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right {
   width: 60%;
   height: 50%;
   display: -webkit-box;
@@ -673,7 +691,7 @@
           justify-content: center;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -688,7 +706,7 @@
   font-size: 1.2rem;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -703,7 +721,7 @@
   font-size: 1.2rem;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -722,12 +740,12 @@
   position: relative;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .text {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .text {
   width: 100%;
   height: 100%;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars {
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +755,7 @@
   left: 0%;
 }
 
-.workProcess {
+main .workProcess {
   width: 100%;
   height: 110vh;
   background-image: url("../images/Fourth/bg.png");
@@ -755,7 +773,7 @@
           justify-content: center;
 }
 
-.workProcess .workProcessInnerContainer {
+main .workProcess .workProcessInnerContainer {
   width: 80%;
   height: 90%;
   display: -webkit-box;
@@ -773,7 +791,7 @@
           justify-content: space-between;
 }
 
-.workProcess .workProcessInnerContainer .top {
+main .workProcess .workProcessInnerContainer .top {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -787,7 +805,7 @@
           justify-content: flex-start;
 }
 
-.workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about {
+main .workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -801,23 +819,23 @@
           justify-content: flex-start;
 }
 
-.workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span:first-of-type {
+main .workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span:first-of-type {
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
 }
 
-.workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span {
+main .workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span {
   font-weight: bold;
 }
 
-.workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span:nth-child(2) {
+main .workProcess .workProcessInnerContainer .top .workProcess__aboutTeam__about span:nth-child(2) {
   font-family: Montserrat-semi-bold;
   font-weight: bold;
   font-size: 2rem;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems {
+main .workProcess .workProcessInnerContainer .bottomInnerItems {
   width: 100%;
   height: 89%;
   display: -webkit-box;
@@ -831,7 +849,7 @@
       align-content: center;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelsContainer {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelsContainer {
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -845,7 +863,7 @@
           justify-content: space-between;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer {
   width: 100%;
   height: 90%;
   display: -webkit-box;
@@ -859,7 +877,7 @@
           justify-content: space-between;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer {
   width: 30%;
   height: 100%;
   display: -webkit-box;
@@ -877,12 +895,12 @@
           justify-content: space-between;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part {
   width: 100%;
   height: 20%;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top {
   width: 100%;
   height: 15%;
   display: -webkit-box;
@@ -896,7 +914,7 @@
           justify-content: flex-start;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .boxi {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .boxi {
   width: 5%;
   height: 100%;
   background-color: teal;
@@ -911,19 +929,19 @@
           justify-content: center;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .boxi .innerBox {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .boxi .innerBox {
   width: 50%;
   height: 50%;
   background-color: #fff;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .content {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .top .content {
   font-weight: bold;
   font-family: Montserrat-bold;
   margin-left: 1rem;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .bottom {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .bottom {
   width: 100%;
   height: 82%;
   margin-top: 3%;
@@ -947,7 +965,7 @@
           justify-content: space-between;
 }
 
-.workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .bottom .tx {
+main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescriptionContainer .levelContainer .part .bottom .tx {
   width: 100%;
   height: 25%;
   display: -webkit-box;
@@ -962,22 +980,198 @@
   font-family: Montserrat;
 }
 
-.levelCount4 .part {
+main .levelCount4 .part {
   height: 20% !important;
 }
 
-.level3Stick {
+main .level3Stick {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
 }
 
-.level3Stick .part {
+main .level3Stick .part {
   height: 20% !important;
   margin-top: 7%;
 }
 
-.level3Stick .part:first-child {
+main .level3Stick .part:first-child {
   margin-top: 0;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #0d6b6a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+footer .line {
+  width: 99%;
+  height: 50%;
+  top: 5vh;
+  position: absolute;
+}
+
+footer .footer__top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5vh;
+}
+
+footer .footer__top h1 {
+  color: #fff;
+  font-size: 28px;
+  font-family: Montserrat;
+}
+
+footer .footer__top p {
+  width: 770px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: justify;
+  color: #dddddd;
+  font-family: Montserrat;
+}
+
+footer .footer__top .top__iconsContainer {
+  width: 10%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__top a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__bottom {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__bottom .linksContainer {
+  width: 50%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__bottom .linksContainer a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 20px;
+}
+
+footer .footer__bottom .contactsInfo {
+  width: 20%;
+  height: 10rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__bottom .contactsInfo .contactItem {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .footer__bottom .contactsInfo img {
+  width: 20px;
+  height: 20px;
 }
 /*# sourceMappingURL=main.css.map */

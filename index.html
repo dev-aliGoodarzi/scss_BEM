@@ -13,883 +13,955 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <!-- header AND NAV BAR  -->
-    <!-- header AND NAV BAR  -->
-    <!-- Landing Section -->
-    <div class="landing">
-      <nav class="landing__navBar">
-        <div class="header__logo">IN.DESIGN</div>
-        <div class="header__items">
-          <div class="header__items__links">
+    <main>
+      <!-- Landing Section -->
+      <div class="landing">
+        <nav class="landing__navBar">
+          <div class="header__logo">IN.DESIGN</div>
+          <div class="hamburgerMenu" id="hambeugerMenu">
+            <span>ـــ</span>
+            <span>ـــ</span>
+            <span>ـــ</span>
+          </div>
+          <div class="header__items" id="header-items">
+            <div class="header__items__links">
+              <a href="#" class="home">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Services</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Contacts</a>
+            </div>
+            <button class="btn">Register / Login</button>
+          </div>
+        </nav>
+        <div class="loadigContainer">
+          <div class="landing__contents">
+            <h1 class="loading__contents__bigText">
+              We Make
+              <br />
+              Your&nbsp;H<span style="color: teal">o</span>me
+              <br />
+              Better&nbsp;Today
+            </h1>
+            <p class="loading__contents__text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <button class="btn">TO ORDER <span> &#8594; </span></button>
+          </div>
+          <div class="landing__imageContainer">
+            <img src="./images/landing-section/image.png" alt="" />
+          </div>
+        </div>
+
+        <div class="hamburgerMenuContainer" id="hamburgerMenuContainer">
+          <div class="logo">IN.DESIGN</div>
+          <div class="links">
             <a href="#" class="home">Home</a>
             <a href="#">About Us</a>
             <a href="#">Services</a>
             <a href="#">Portfolio</a>
             <a href="#">Contacts</a>
           </div>
-          <button class="btn">Register / Login</button>
-        </div>
-      </nav>
-      <div class="loadigContainer">
-        <div class="landing__contents">
-          <h1 class="loading__contents__bigText">
-            We Make
-            <br />
-            Your&nbsp;H<span style="color: teal">o</span>me
-            <br />
-            Better&nbsp;Today
-          </h1>
-          <p class="loading__contents__text">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-          </p>
-          <button class="btn">TO ORDER <span> &#8594; </span></button>
-        </div>
-        <div class="landing__imageContainer">
-          <img src="./images/landing-section/image.png" alt="" />
         </div>
       </div>
-    </div>
-    <!-- Landing Section -->
-    <!-- humanResourses -->
-    <div class="humanResouresContainer">
-      <section class="humanResouresContainer__aboutTeam">
-        <div class="humanResouresContainer__aboutTeam__about">
-          <span> ــــــ </span>
-          <span> A team United by Shared values</span>
-        </div>
-        <div class="humanResouresContainer__aboutTeam__picturesAndContents">
-          <div class="aboutNumberOfHumans">
-            <div class="topNumberContainer">6</div>
-            <p>Professional designers In Our&nbsp;Team</p>
-          </div>
-          <div class="humansPictureContainerMaster">
-            <div class="top">
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 1"
-                data-job="Developer"
-              >
-                <img src="images/secondSection/man.png" alt="" />
-              </div>
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 2"
-                data-job="Developer"
-              >
-                <img src="images/secondSection/woman.png" alt="" />
-              </div>
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 3"
-                data-job="designer"
-              >
-                <img src="images/secondSection/man.png" alt="" />
-              </div>
-            </div>
-            <div class="bottom">
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 4"
-                data-job="Developer"
-              >
-                <img src="images/secondSection/woman.png" alt="" />
-              </div>
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 5"
-                data-job="Developer"
-              >
-                <img src="images/secondSection/man.png" alt="" />
-              </div>
-              <div
-                class="humansPictureContainer__humanPicture"
-                data-name=" person 6"
-                data-job="Developer"
-              >
-                <img src="images/secondSection/woman.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- humanResourses -->
-    <!-- Customer Comments -->
-    <div class="customerCommentsContainerMaster">
-      <div class="btn-container">
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-      </div>
-      <div class="mainContainer swiper">
-        <div class="customerCommentsSlideContainer__aboutTeam__about">
-          <span> ــــــ </span>
-          <span> A team United by Shared values</span>
-        </div>
-        <div class="customers_comment swiper-wrapper">
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="item swiper-slide">
-            <div class="top">
-              <div class="left">
-                <img src="images/third/image.png" alt="p1" />
-              </div>
-              <div class="right">
-                <div class="name">Sara Cristian</div>
-                <div class="groupName">EZ</div>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                quia quisquam totam recusandae, veniam ea.
-              </div>
-              <div class="stars" data-stars="1">
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-                <img
-                  src="images/Fourth/star.svg"
-                  height="25"
-                  width="23"
-                  class="star rating"
-                  data-rating="1"
-                  alt="star"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="workProcess">
-      <div class="workProcessInnerContainer">
-        <div class="top">
-          <div class="workProcess__aboutTeam__about">
+      <!-- Landing Section -->
+      <!-- humanResourses -->
+      <div class="humanResouresContainer">
+        <section class="humanResouresContainer__aboutTeam">
+          <div class="humanResouresContainer__aboutTeam__about">
             <span> ــــــ </span>
-            <span> Our Work Process make your dream true</span>
+            <span> A team United by Shared values</span>
           </div>
+          <div class="humanResouresContainer__aboutTeam__picturesAndContents">
+            <div class="aboutNumberOfHumans">
+              <div class="topNumberContainer">6</div>
+              <p>Professional designers In Our&nbsp;Team</p>
+            </div>
+            <div class="humansPictureContainerMaster">
+              <div class="top">
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 1"
+                  data-job="Developer"
+                >
+                  <img src="images/secondSection/man.png" alt="" />
+                </div>
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 2"
+                  data-job="Developer"
+                >
+                  <img src="images/secondSection/woman.png" alt="" />
+                </div>
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 3"
+                  data-job="designer"
+                >
+                  <img src="images/secondSection/man.png" alt="" />
+                </div>
+              </div>
+              <div class="bottom">
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 4"
+                  data-job="Developer"
+                >
+                  <img src="images/secondSection/woman.png" alt="" />
+                </div>
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 5"
+                  data-job="Developer"
+                >
+                  <img src="images/secondSection/man.png" alt="" />
+                </div>
+                <div
+                  class="humansPictureContainer__humanPicture"
+                  data-name=" person 6"
+                  data-job="Developer"
+                >
+                  <img src="images/secondSection/woman.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- humanResourses -->
+      <!-- Customer Comments -->
+      <div class="customerCommentsContainerMaster">
+        <div class="btn-container">
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
         </div>
-        <div class="bottomInnerItems swiper-slide">
-          <div class="levelsContainer">
-            <div class="level1">
-              <div class="levelNumber">01</div>
-              <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+        <div class="mainContainer swiper">
+          <div class="customerCommentsSlideContainer__aboutTeam__about">
+            <span> ــــــ </span>
+            <span> A team United by Shared values</span>
+          </div>
+          <div class="customers_comment swiper-wrapper">
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="level2">
-              <div class="levelNumber">02</div>
-              <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="level3">
-              <div class="levelNumber">03</div>
-              <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="top">
+                <div class="left">
+                  <img src="images/third/image.png" alt="p1" />
+                </div>
+                <div class="right">
+                  <div class="name">Sara Cristian</div>
+                  <div class="groupName">EZ</div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                  quia quisquam totam recusandae, veniam ea.
+                </div>
+                <div class="stars" data-stars="1">
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                  <img
+                    src="images/Fourth/star.svg"
+                    height="25"
+                    width="23"
+                    class="star rating"
+                    data-rating="1"
+                    alt="star"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="levelDescriptionContainer">
-            <div class="levelContainer levelCount4">
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Viverra nibh cras pulvinar</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Tellus in metus vulputate</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Tellus in metus vulputate</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="levelContainer level3Stick">
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="levelContainer level3Stick">
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-              <div class="part">
-                <div class="top">
-                  <div class="boxi">
-                    <div class="innerBox"></div>
-                  </div>
-                  <div class="content">Architectural developent</div>
-                </div>
-                <div class="bottom">
-                  <div class="tx">- Lorem ipsum dolor sit amet.</div>
-                  <div class="tx">
-                    - Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam, vero?
-                  </div>
-                  <div class="tx">
-                    - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi sed veritatis illum sint.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src="" alt="" />
         </div>
       </div>
-    </div>
-    <!-- Customer Comments -->
-
+      <div class="workProcess">
+        <div class="workProcessInnerContainer">
+          <div class="top">
+            <div class="workProcess__aboutTeam__about">
+              <span> ــــــ </span>
+              <span> Our Work Process make your dream true</span>
+            </div>
+          </div>
+          <div class="bottomInnerItems swiper-slide">
+            <div class="levelsContainer">
+              <div class="level1">
+                <div class="levelNumber">01</div>
+                <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+              </div>
+              <div class="level2">
+                <div class="levelNumber">02</div>
+                <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+              </div>
+              <div class="level3">
+                <div class="levelNumber">03</div>
+                <div class="levelDescription">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="levelDescriptionContainer">
+              <div class="levelContainer levelCount4">
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Viverra nibh cras pulvinar</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Tellus in metus vulputate</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Tellus in metus vulputate</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="levelContainer level3Stick">
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="levelContainer level3Stick">
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="top">
+                    <div class="boxi">
+                      <div class="innerBox"></div>
+                    </div>
+                    <div class="content">Architectural developent</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="tx">- Lorem ipsum dolor sit amet.</div>
+                    <div class="tx">
+                      - Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Nam, vero?
+                    </div>
+                    <div class="tx">
+                      - Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Nisi sed veritatis illum sint.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Customer Comments -->
+    </main>
+    <footer>
+      <img src="images/footer/line.png" class="line" alt="" />
+      <div class="footer__top">
+        <h1>IN.DESIGN</h1>
+        <p>
+          We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud equip ex ea commodo consequat.
+        </p>
+        <div class="top__iconsContainer">
+          <a href="#">
+            <img src="icons/socialMediaIcons/facebook.svg" alt="fb__icon" />
+          </a>
+          <a href="#">
+            <img src="icons/socialMediaIcons/facebook.svg" alt="fb__icon" />
+          </a>
+          <a href="#">
+            <img src="icons/socialMediaIcons/facebook.svg" alt="fb__icon" />
+          </a>
+          <a href="#">
+            <img src="icons/socialMediaIcons/facebook.svg" alt="fb__icon" />
+          </a>
+          <a href="#">
+            <img src="icons/socialMediaIcons/facebook.svg" alt="fb__icon" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="linksContainer">
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Blog</a>
+          <a href="#">FAQ</a>
+          <a href="#">Carears</a>
+          <a href="#">Contact</a>
+          <a href="#">Privicy Policy</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Terms Of Use</a>
+        </div>
+        <div class="contactsInfo">
+          <div class="contactItem">
+            <img src="icons/socialMediaIcons/call-calling.svg" alt="" />
+            <div class="about">
+              <p>Have a Question ?</p>
+              <p>310 - 437 - 2766</p>
+            </div>
+          </div>
+          <div class="contactItem">
+            <img src="" alt="" />
+            <div class="about">
+              <p>Contact Us at</p>
+              <p>abc123@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/app.js"></script>
   </body>
 </html>
