@@ -438,6 +438,34 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.customerCommentsContainerMaster .btn-container {
+  width: 5rem;
+  height: 3rem;
+  position: absolute;
+  left: 20%;
+  bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customerCommentsContainerMaster .btn-container button {
+  width: calc(50% - 0.4rem);
+  height: calc(100% - 0.4rem);
+  background-color: teal;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Montserrat;
 }
 
 .customerCommentsContainerMaster .mainContainer {
@@ -524,6 +552,10 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item .swiper-slide {
+  width: 23% !important;
 }
 
 .customerCommentsContainerMaster .mainContainer .customers_comment .item:hover {

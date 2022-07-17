@@ -311,6 +311,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  .btn-container {
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    left: 20%;
+    bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      width: calc(50% - 0.4rem);
+      height: calc(100% - 0.4rem);
+      background-color: teal;
+      color: #fff;
+      font : {
+        size: 2rem;
+        weight: bold;
+        family: Montserrat;
+      }
+    }
+  }
   .mainContainer {
     width: 60%;
     height: 70%;
@@ -362,6 +384,9 @@
         box-sizing: border-box;
         padding: 1rem;
         transition: transform 0.3s ease;
+        .swiper-slide {
+          width: 23% !important;
+        }
         &:hover {
           transform: scale(1.1);
         }
