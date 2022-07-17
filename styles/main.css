@@ -657,42 +657,6 @@
   left: 0%;
 }
 
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars:hover .star polygon {
-  fill: #ffd055 !important;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars .star polygon {
-  fill: #d8d8d8;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars .star:hover ~ .star polygon {
-  fill: #d8d8d8 !important;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars] .star polygon {
-  fill: #ffd055;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {
-  fill: #d8d8d8;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {
-  fill: #d8d8d8;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {
-  fill: #d8d8d8;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {
-  fill: #d8d8d8;
-}
-
-.customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom .stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {
-  fill: #d8d8d8;
-}
-
 .workProcess {
   width: 100%;
   height: 110vh;
