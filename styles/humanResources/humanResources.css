@@ -225,4 +225,73 @@
 .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
   opacity: 1;
 }
+
+@media screen and (max-width: 400px) {
+  .humanResouresContainer {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5vh;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
+    width: 100%;
+    height: 56px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
+    font-size: 20px !important;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
+    width: 100%;
+    height: 304px;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
+    line-height: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
+    line-height: 32px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humansPictureContainerMaster {
+    width: 100% !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humansPictureContainerMaster .top,
+  .humanResouresContainer .humanResouresContainer__aboutTeam .humansPictureContainerMaster .bottom {
+    width: 100%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
 /*# sourceMappingURL=humanResources.css.map */

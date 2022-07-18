@@ -252,4 +252,85 @@
 .level3Stick .part:first-child {
   margin-top: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .landing {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    background: none;
+  }
+  .landing .header__logo {
+    display: none !important;
+  }
+  .landing .landing__navBar {
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    background-image: url("../images/landing-section/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 5%;
+  }
+  .landing .loadigContainer {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing .loadigContainer .landing__contents {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
+  }
+  .landing .loadigContainer .landing__contents .loading__contents__bigText {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    line-height: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Montserrat-bold;
+  }
+  .landing .loadigContainer .landing__contents .loading__contents__text {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    line-height: 20px;
+    margin-top: 2rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .landing .loadigContainer .landing__contents .btn {
+    width: 170px;
+    height: 40px;
+    margin-top: 2rem;
+  }
+  .landing .loadigContainer .landing__imageContainer {
+    width: 95%;
+    height: 338px;
+  }
+  .landing .loadigContainer .landing__imageContainer::after {
+    width: 110%;
+    height: 228px;
+    top: 57px;
+    left: -5%;
+  }
+}
 /*# sourceMappingURL=landing.css.map */
