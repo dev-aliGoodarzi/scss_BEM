@@ -1,0 +1,161 @@
+.humanResouresContainer {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .humanResouresContainer__aboutTeam {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .humanResouresContainer__aboutTeam__about {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      span {
+        &:first-of-type {
+          margin-right: 1rem;
+          color: teal;
+          font : {
+            size: 2rem;
+          }
+        }
+      }
+      span {
+        font : {
+          weight: bold;
+        }
+        &:nth-child(2) {
+          font : {
+            family: Montserrat-semi-bold;
+            weight: bold;
+            size: 2rem;
+          }
+        }
+      }
+    }
+    .humanResouresContainer__aboutTeam__picturesAndContents {
+      width: 100%;
+      height: 82%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .aboutNumberOfHumans {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: teal;
+        .topNumberContainer {
+          width: 100%;
+          height: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          box-sizing: border-box;
+          padding: 2rem;
+          color: teal;
+          text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
+          font : {
+            family: Montserrat;
+            size: 13rem;
+          }
+        }
+        p {
+          width: 80%;
+          height: 20%;
+          color: #fff;
+          font : {
+            family: Montserrat-bold;
+            weight: bold;
+            size: 1.5rem;
+          }
+        }
+      }
+      .humansPictureContainerMaster {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .top,
+        .bottom {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          align-items: center;
+          .humansPictureContainer__humanPicture {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            &::before {
+              width: 100%;
+              height: 100%;
+              content: attr(data-name);
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-end;
+              box-sizing: border-box;
+              transition: 0.2s ease;
+              padding: {
+                left: 10%;
+                bottom: 20%;
+              }
+              z-index: 37;
+              color: #fff;
+              font : {
+                size: 18px;
+                family: Montserrat-bold;
+              }
+              opacity: 0;
+            }
+            &::after {
+              width: 100%;
+              height: 100%;
+              content: attr(data-job);
+              position: absolute;
+              z-index: 36;
+              top: 0;
+              left: 0;
+              transition: 0.2s ease;
+              opacity: 0;
+              box-sizing: border-box;
+              padding: {
+                left: 10%;
+                top: 70%;
+              }
+              color: rgba(255, 255, 255, 0.699);
+              font : {
+                size: 14px;
+                family: Montserrat-bold;
+              }
+            }
+            &:hover {
+              &::after {
+                opacity: 1;
+                background-color: rgba(0, 128, 128, 0.432);
+              }
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

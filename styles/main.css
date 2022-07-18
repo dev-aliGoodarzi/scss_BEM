@@ -1,160 +1,52 @@
 @font-face {
-  font-family: Montserrat;
-  src: url("../fonts/Montserrat-Regular.ttf");
+  main {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Regular.ttf");
+  }
 }
 
 @font-face {
-  font-family: Montserrat-semi-bold;
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  main {
+    font-family: Montserrat-semi-bold;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+  }
 }
 
 @font-face {
-  font-family: Montserrat-bold;
-  src: url("../fonts/Montserrat-Bold.ttf");
+  main {
+    font-family: Montserrat-bold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+  }
 }
 
-* {
+main * {
   padding: 0;
   margin: 0;
   outline: 0;
   border: 0;
 }
 
-* a {
+main * a {
   color: #000;
   text-decoration: none;
 }
 
-* a:hover, * a:active, * a:visited {
+main * a:hover, main * a:active, main * a:visited {
   color: #000;
 }
 
-main .landing {
+main .beforeFooter {
   width: 100%;
-  height: 70vh;
+  height: 50vh;
+}
+
+main .beforeFooter .offerForm {
+  width: 870px;
+  height: 337px;
+  background-color: white;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-image: url("../images/landing-section/bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-main .landing .landing__navBar {
-  width: 70vw;
-  height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  top: 1vh;
-}
-
-main .landing .landing__navBar .header__logo {
-  width: 10%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-main .landing .landing__navBar .hamburgerMenu {
-  width: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  line-height: 0.3;
-}
-
-main .landing .landing__navBar .header__items {
-  width: 70%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .landing .landing__navBar .header__items .header__items__links {
-  width: 70%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .landing .landing__navBar .header__items .btn {
-  width: 20%;
-  height: 70%;
-  background-color: teal;
-  color: #fff;
-}
-
-main .landing .loadigContainer {
-  width: 70vw;
-  height: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-main .landing .loadigContainer .landing__contents {
-  width: 45%;
-  height: 80%;
+  z-index: 8;
+  left: 21.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,332 +57,85 @@ main .landing .loadigContainer .landing__contents {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .landing .loadigContainer .landing__contents .loading__contents__bigText {
-  width: 50%;
-  height: 50%;
-  text-align: justify;
-  font-size: 4rem;
-}
-
-main .landing .loadigContainer .landing__contents .loading__contents__text {
-  width: 75%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  text-align: left;
-  color: #666666;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-main .landing .loadigContainer .landing__contents .btn {
-  width: 229px;
-  height: 46px;
-  background-color: teal;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.2);
+          box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
-  padding-left: 7%;
-  font-weight: bold;
 }
 
-main .landing .loadigContainer .landing__contents .btn span {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  position: absolute;
-  top: 0%;
-  left: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-main .landing .loadigContainer .landing__imageContainer {
-  width: 470px;
-  height: 484px;
-  position: relative;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-main .landing .loadigContainer .landing__imageContainer::after {
-  width: 297px;
-  height: 228px;
-  position: absolute;
-  z-index: -1;
-  background-color: teal;
-  content: "";
-  top: -5%;
-  left: -5%;
-}
-
-main .landing .loadigContainer .landing__imageContainer img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-main .humanResouresContainer {
-  width: 100%;
-  height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam {
+main .beforeFooter .offerForm .offerForm__offerHelper {
   width: 60%;
-  height: 70%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  left: 5%;
 }
 
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
-  width: 100%;
-  height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:first-of-type {
+main .beforeFooter .offerForm .offerForm__offerHelper span:first-of-type {
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
 }
 
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
+main .beforeFooter .offerForm .offerForm__offerHelper span {
   font-weight: bold;
 }
 
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:nth-child(2) {
+main .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
   font-family: Montserrat-semi-bold;
   font-weight: bold;
   font-size: 2rem;
 }
 
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
-  width: 100%;
-  height: 82%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
-  width: 40%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: teal;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
-  width: 100%;
-  height: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 2rem;
-  color: teal;
-  text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
-  font-family: Montserrat;
-  font-size: 13rem;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
-  width: 80%;
+main .beforeFooter .offerForm .inputContainer {
+  width: 70%;
   height: 20%;
-  color: #fff;
-  font-family: Montserrat-bold;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster {
-  width: 60%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  left: 10%;
 }
 
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom {
-  width: 100%;
-  height: 50%;
+main .beforeFooter .offerForm .inputContainer input {
+  width: 70%;
+  height: 80%;
+  border: 1px solid #dddddd;
+}
+
+main .beforeFooter .offerForm .inputContainer button {
+  width: 29%;
+  height: 80%;
+  color: #fff;
+  background-color: #0d6b6a;
+  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture img,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture img {
-  width: 100%;
-  height: 100%;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::before,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::before {
-  width: 100%;
-  height: 100%;
-  content: attr(data-name);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  padding-left: 10%;
-  padding-bottom: 20%;
-  z-index: 37;
-  color: #fff;
-  font-size: 18px;
-  font-family: Montserrat-bold;
-  opacity: 0;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::after,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::after {
-  width: 100%;
-  height: 100%;
-  content: attr(data-job);
-  position: absolute;
-  z-index: 36;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  opacity: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 10%;
-  padding-top: 70%;
-  color: rgba(255, 255, 255, 0.699);
-  font-size: 14px;
-  font-family: Montserrat-bold;
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::after,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::after {
-  opacity: 1;
-  background-color: rgba(0, 128, 128, 0.432);
-}
-
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::before,
-main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
-  opacity: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 main .customerCommentsContainerMaster {
@@ -771,6 +416,16 @@ main .workProcess {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+main .workProcess .img-absolute {
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  bottom: -25vh;
+  right: 10vw;
+  z-index: 7;
 }
 
 main .workProcess .workProcessInnerContainer {
@@ -980,6 +635,242 @@ main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescription
   font-family: Montserrat;
 }
 
+main .landing {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/landing-section/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .landing .landing__navBar {
+  width: 70vw;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 1vh;
+}
+
+main .landing .landing__navBar .header__logo {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .landing .landing__navBar .hamburgerMenu {
+  width: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 0.3;
+}
+
+main .landing .landing__navBar .header__items {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .landing .landing__navBar .header__items .header__items__links {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .landing .landing__navBar .header__items .btn {
+  width: 20%;
+  height: 70%;
+  background-color: teal;
+  color: #fff;
+}
+
+main .landing .loadigContainer {
+  width: 70vw;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .landing .loadigContainer .landing__contents {
+  width: 45%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .landing .loadigContainer .landing__contents .loading__contents__bigText {
+  width: 50%;
+  height: 50%;
+  text-align: justify;
+  font-size: 4rem;
+}
+
+main .landing .loadigContainer .landing__contents .loading__contents__text {
+  width: 75%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: left;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .landing .loadigContainer .landing__contents .btn {
+  width: 229px;
+  height: 46px;
+  background-color: teal;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-left: 7%;
+  font-weight: bold;
+}
+
+main .landing .loadigContainer .landing__contents .btn span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main .landing .loadigContainer .landing__imageContainer {
+  width: 470px;
+  height: 484px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .landing .loadigContainer .landing__imageContainer::after {
+  width: 297px;
+  height: 228px;
+  position: absolute;
+  z-index: -1;
+  background-color: teal;
+  content: "";
+  top: -5%;
+  left: -5%;
+}
+
+main .landing .loadigContainer .landing__imageContainer img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 main .levelCount4 .part {
   height: 20% !important;
 }
@@ -997,6 +888,234 @@ main .level3Stick .part {
 
 main .level3Stick .part:first-child {
   margin-top: 0;
+}
+
+main .humanResouresContainer {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam {
+  width: 60%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:first-of-type {
+  margin-right: 1rem;
+  color: teal;
+  font-size: 2rem;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
+  font-weight: bold;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:nth-child(2) {
+  font-family: Montserrat-semi-bold;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
+  width: 100%;
+  height: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: teal;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  color: teal;
+  text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
+  font-family: Montserrat;
+  font-size: 13rem;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
+  width: 80%;
+  height: 20%;
+  color: #fff;
+  font-family: Montserrat-bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture img,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture img {
+  width: 100%;
+  height: 100%;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::before,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::before {
+  width: 100%;
+  height: 100%;
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding-left: 10%;
+  padding-bottom: 20%;
+  z-index: 37;
+  color: #fff;
+  font-size: 18px;
+  font-family: Montserrat-bold;
+  opacity: 0;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::after,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::after {
+  width: 100%;
+  height: 100%;
+  content: attr(data-job);
+  position: absolute;
+  z-index: 36;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10%;
+  padding-top: 70%;
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 14px;
+  font-family: Montserrat-bold;
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::after,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::after {
+  opacity: 1;
+  background-color: rgba(0, 128, 128, 0.432);
+}
+
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::before,
+main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
+  opacity: 1;
 }
 
 footer {
@@ -1137,7 +1256,7 @@ footer .footer__bottom .linksContainer a {
 }
 
 footer .footer__bottom .contactsInfo {
-  width: 20%;
+  width: 50%;
   height: 10rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1157,7 +1276,7 @@ footer .footer__bottom .contactsInfo {
           justify-content: space-between;
 }
 
-footer .footer__bottom .contactsInfo .contactItem {
+footer .footer__bottom .contactsInfo .contactItem__container {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,9 +1289,39 @@ footer .footer__bottom .contactsInfo .contactItem {
           justify-content: flex-start;
 }
 
-footer .footer__bottom .contactsInfo img {
+footer .footer__bottom .contactsInfo .contactItem__container .contactItem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .footer__bottom .contactsInfo .contactItem__container .contactItem img {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
+}
+
+footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about {
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

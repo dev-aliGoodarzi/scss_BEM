@@ -1,0 +1,228 @@
+.humanResouresContainer {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam {
+  width: 60%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:first-of-type {
+  margin-right: 1rem;
+  color: teal;
+  font-size: 2rem;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span {
+  font-weight: bold;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__about span:nth-child(2) {
+  font-family: Montserrat-semi-bold;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents {
+  width: 100%;
+  height: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: teal;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans .topNumberContainer {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  color: teal;
+  text-shadow: -3px 1px #fff, 1px 3px #fff, 3px 1px #fff, 1px -3px #fff;
+  font-family: Montserrat;
+  font-size: 13rem;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
+  width: 80%;
+  height: 20%;
+  color: #fff;
+  font-family: Montserrat-bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture img,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture img {
+  width: 100%;
+  height: 100%;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::before,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::before {
+  width: 100%;
+  height: 100%;
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding-left: 10%;
+  padding-bottom: 20%;
+  z-index: 37;
+  color: #fff;
+  font-size: 18px;
+  font-family: Montserrat-bold;
+  opacity: 0;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture::after,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture::after {
+  width: 100%;
+  height: 100%;
+  content: attr(data-job);
+  position: absolute;
+  z-index: 36;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10%;
+  padding-top: 70%;
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 14px;
+  font-family: Montserrat-bold;
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::after,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::after {
+  opacity: 1;
+  background-color: rgba(0, 128, 128, 0.432);
+}
+
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .top .humansPictureContainer__humanPicture:hover::before,
+.humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .humansPictureContainerMaster .bottom .humansPictureContainer__humanPicture:hover::before {
+  opacity: 1;
+}
+/*# sourceMappingURL=humanResources.css.map */

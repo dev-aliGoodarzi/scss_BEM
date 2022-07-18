@@ -1,0 +1,77 @@
+.beforeFooter {
+  width: 100%;
+  height: 50vh;
+  .offerForm {
+    width: 870px;
+    height: 337px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 8;
+    left: 21.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.2);
+    box-sizing: border-box;
+    .offerForm__offerHelper {
+      width: 60%;
+      height: 20%;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      left: 5%;
+      span {
+        &:first-of-type {
+          margin-right: 1rem;
+          color: teal;
+          font : {
+            size: 2rem;
+          }
+        }
+      }
+      span {
+        font : {
+          weight: bold;
+        }
+        &:nth-child(2) {
+          font : {
+            family: Montserrat-semi-bold;
+            weight: bold;
+            size: 2rem;
+          }
+        }
+      }
+    }
+    .inputContainer {
+      width: 70%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      left: 10%;
+      input {
+        width: 70%;
+        height: 80%;
+        border: 1px solid #dddddd;
+      }
+      button {
+        width: 29%;
+        height: 80%;
+        color: #fff;
+        background-color: #0d6b6a;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font : {
+          family: "Montserrat";
+          style: normal;
+          weight: 400;
+          size: 20px;
+        }
+      }
+    }
+  }
+}

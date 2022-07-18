@@ -1,0 +1,173 @@
+.landing {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background : {
+    image: url("../images/landing-section/bg.png");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+
+  .landing__navBar {
+    width: 70vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 1vh;
+    .header__logo {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .hamburgerMenu {
+      width: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 0.3;
+    }
+    .header__items {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header__items__links {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .btn {
+        width: 20%;
+        height: 70%;
+        background-color: teal;
+        color: #fff;
+      }
+    }
+  }
+  .loadigContainer {
+    width: 70vw;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .landing__contents {
+      width: 45%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .loading__contents__bigText {
+        width: 50%;
+        height: 50%;
+        text-align: justify;
+        font : {
+          size: 4rem;
+        }
+      }
+      .loading__contents__text {
+        width: 75%;
+        height: max-content;
+        text-align: left;
+        color: #666666;
+        font : {
+          size: 18px;
+          weight: 500;
+        }
+      }
+      .btn {
+        width: 229px;
+        height: 46px;
+        background-color: teal;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        padding: {
+          left: 7%;
+        }
+        font : {
+          weight: bold;
+        }
+        span {
+          width: max-content;
+          height: max-content;
+          position: absolute;
+          top: 0%;
+          left: 60%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font : {
+            size: 2rem;
+            weight: bold;
+          }
+        }
+      }
+    }
+    .landing__imageContainer {
+      width: 470px;
+      height: 484px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      &::after {
+        width: 297px;
+        height: 228px;
+        position: absolute;
+        z-index: -1;
+        background-color: teal;
+        content: "";
+        top: -5%;
+        left: -5%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+// ******** FOR CHANGE COLUMNS OF LEVEL DESCRITION
+.levelCount4 {
+  .part {
+    height: 20% !important;
+  }
+}
+// ******** FOR CHANGE COLUMNS OF LEVEL DESCRITION
+//*******************************************************
+// ******** FOR CHANGE MARGIN AND JUSTIFY OF LEVEL DESCRIPTION
+.level3Stick {
+  justify-content: flex-start !important;
+  .part {
+    height: 20% !important;
+    margin: {
+      top: 7%;
+    }
+  }
+  .part:first-child {
+    margin-top: 0;
+  }
+}
+// ******** FOR CHANGE MARGIN AND JUSTIFY OF LEVEL DESCRIPTION
