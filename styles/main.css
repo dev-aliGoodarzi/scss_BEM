@@ -29,10 +29,18 @@
   color: #000;
 }
 
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 1rem;
+@media screen and (max-width: 400px) {
+  body {
+    padding: 1rem;
+  }
+  body .landing .landing__navBar {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  body .swiper-pg {
+    display: none !important;
+  }
 }
 
 main .landing {
@@ -74,9 +82,6 @@ main .landing .landing__navBar {
           justify-content: space-between;
   position: relative;
   top: 1vh;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  margin-top: -1rem;
 }
 
 main .landing .landing__navBar .header__logo {
@@ -147,7 +152,7 @@ main .landing .landing__navBar .header__items .btn {
 }
 
 main .landing .loadigContainer {
-  width: 70vw;
+  width: 70%;
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,7 +247,7 @@ main .landing .loadigContainer .landing__contents .btn span {
 }
 
 main .landing .loadigContainer .landing__imageContainer {
-  width: 470px;
+  width: 47%;
   height: 484px;
   position: relative;
   z-index: 1;
@@ -416,7 +421,7 @@ main .humanResouresContainer {
 }
 
 main .humanResouresContainer .humanResouresContainer__aboutTeam {
-  width: 60%;
+  width: 70%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,7 +617,7 @@ main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresCo
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 10%;
-  padding-top: 70%;
+  padding-top: 60%;
   color: rgba(255, 255, 255, 0.699);
   font-size: 14px;
   font-family: Montserrat-bold;
@@ -707,10 +712,21 @@ main .customerCommentsContainerMaster {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
+}
+
+main .customerCommentsContainerMaster .swiper-pg {
+  width: 30%;
+  height: 5vh;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 60% !important;
+  top: 3% !important;
+  right: 0% !important;
+  z-index: 40;
 }
 
 main .customerCommentsContainerMaster .btn-container {
@@ -747,7 +763,7 @@ main .customerCommentsContainerMaster .btn-container button:nth-child(1) {
 }
 
 main .customerCommentsContainerMaster .mainContainer {
-  width: 60%;
+  width: 80%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,7 +781,7 @@ main .customerCommentsContainerMaster .mainContainer {
 }
 
 main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about {
-  width: 100%;
+  width: calc(100% - 12.5%);
   height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,7 +808,7 @@ main .customerCommentsContainerMaster .mainContainer .customerCommentsSlideConta
 }
 
 main .customerCommentsContainerMaster .mainContainer .customers_comment {
-  width: 100%;
+  width: 80%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,8 +821,16 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment {
           justify-content: space-between;
 }
 
+main .customerCommentsContainerMaster .mainContainer .customers_comment::-moz-selection {
+  background-color: transparent;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment::selection {
+  background-color: transparent;
+}
+
 main .customerCommentsContainerMaster .mainContainer .customers_comment .item {
-  width: 23%;
+  width: 25%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,6 +854,14 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment .item {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item::-moz-selection {
+  background-color: transparent;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item::selection {
+  background-color: transparent;
 }
 
 main .customerCommentsContainerMaster .mainContainer .customers_comment .item .swiper-slide {
@@ -917,6 +949,14 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment .item .t
   font-size: 1.2rem;
 }
 
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name::-moz-selection {
+  background-color: transparent;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name::selection {
+  background-color: transparent;
+}
+
 main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName {
   width: 100%;
   height: 10%;
@@ -930,6 +970,14 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment .item .t
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-size: 1.2rem;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName::-moz-selection {
+  background-color: transparent;
+}
+
+main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName::selection {
+  background-color: transparent;
 }
 
 main .customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom {

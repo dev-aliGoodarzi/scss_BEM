@@ -22,6 +22,11 @@ const swiper = new Swiper('.swiper', {
         nextEl: '#next',
         prevEl: '#prev',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
 });
 
 

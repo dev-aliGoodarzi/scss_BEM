@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+
   background : {
     image: url("../images/landing-section/bg.png");
     position: center;
@@ -22,8 +23,6 @@
     justify-content: space-between;
     position: relative;
     top: 1vh;
-    transform: scale(1.1);
-    margin-top: -1rem;
     .header__logo {
       width: 10%;
       height: 100%;
@@ -61,7 +60,7 @@
     }
   }
   .loadigContainer {
-    width: 70vw;
+    width: 70%;
     height: 90%;
     display: flex;
     align-items: center;
@@ -125,7 +124,7 @@
       }
     }
     .landing__imageContainer {
-      width: 470px;
+      width: 47%;
       height: 484px;
       position: relative;
       z-index: 1;

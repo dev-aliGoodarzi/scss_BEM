@@ -7,10 +7,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
+}
+
+.customerCommentsContainerMaster .swiper-pg {
+  width: 30%;
+  height: 5vh;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 60% !important;
+  top: 3% !important;
+  right: 0% !important;
+  z-index: 40;
 }
 
 .customerCommentsContainerMaster .btn-container {
@@ -47,7 +58,7 @@
 }
 
 .customerCommentsContainerMaster .mainContainer {
-  width: 60%;
+  width: 80%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +76,7 @@
 }
 
 .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about {
-  width: 100%;
+  width: calc(100% - 12.5%);
   height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +103,7 @@
 }
 
 .customerCommentsContainerMaster .mainContainer .customers_comment {
-  width: 100%;
+  width: 80%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,8 +116,16 @@
           justify-content: space-between;
 }
 
+.customerCommentsContainerMaster .mainContainer .customers_comment::-moz-selection {
+  background-color: transparent;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment::selection {
+  background-color: transparent;
+}
+
 .customerCommentsContainerMaster .mainContainer .customers_comment .item {
-  width: 23%;
+  width: 25%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +149,14 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item::-moz-selection {
+  background-color: transparent;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item::selection {
+  background-color: transparent;
 }
 
 .customerCommentsContainerMaster .mainContainer .customers_comment .item .swiper-slide {
@@ -217,6 +244,14 @@
   font-size: 1.2rem;
 }
 
+.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name::-moz-selection {
+  background-color: transparent;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .name::selection {
+  background-color: transparent;
+}
+
 .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName {
   width: 100%;
   height: 10%;
@@ -230,6 +265,14 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-size: 1.2rem;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName::-moz-selection {
+  background-color: transparent;
+}
+
+.customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right .groupName::selection {
+  background-color: transparent;
 }
 
 .customerCommentsContainerMaster .mainContainer .customers_comment .item .bottom {

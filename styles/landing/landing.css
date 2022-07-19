@@ -37,9 +37,6 @@
           justify-content: space-between;
   position: relative;
   top: 1vh;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  margin-top: -1rem;
 }
 
 .landing .landing__navBar .header__logo {
@@ -110,7 +107,7 @@
 }
 
 .landing .loadigContainer {
-  width: 70vw;
+  width: 70%;
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +202,7 @@
 }
 
 .landing .loadigContainer .landing__imageContainer {
-  width: 470px;
+  width: 47%;
   height: 484px;
   position: relative;
   z-index: 1;
