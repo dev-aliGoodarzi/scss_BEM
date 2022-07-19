@@ -28,4 +28,10 @@
 * a:hover, * a:active, * a:visited {
   color: #000;
 }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
 /*# sourceMappingURL=fonts.css.map */

@@ -35,9 +35,15 @@
   height: calc(100% - 0.4rem);
   background-color: teal;
   color: #fff;
+  border: 1px solid #ffffff;
   font-size: 2rem;
   font-weight: bold;
   font-family: Montserrat;
+}
+
+.customerCommentsContainerMaster .btn-container button:nth-child(1) {
+  background-color: #ccc !important;
+  color: #000 !important;
 }
 
 .customerCommentsContainerMaster .mainContainer {
@@ -258,5 +264,69 @@
   position: absolute;
   bottom: 0.5rem;
   left: 0%;
+}
+
+@media screen and (max-width: 400px) {
+  .customerCommentsContainerMaster {
+    width: 100%;
+    height: 418px;
+    margin-top: 3rem;
+  }
+  .customerCommentsContainerMaster .btn-container {
+    width: 30%;
+    bottom: 0;
+    left: 35%;
+    z-index: 66;
+  }
+  .customerCommentsContainerMaster .btn-container button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .customerCommentsContainerMaster .mainContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about {
+    width: 100%;
+    height: 56px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .customerCommentsContainerMaster .mainContainer .customerCommentsSlideContainer__aboutTeam__about span {
+    font-size: 20px !important;
+  }
+  .customerCommentsContainerMaster .mainContainer .customers_comment {
+    width: 100%;
+    height: 250px;
+  }
+  .customerCommentsContainerMaster .mainContainer .customers_comment .item {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+  .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left {
+    width: 30%;
+  }
+  .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left img {
+    width: 50%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=customerCommentsContainerMaster.css.map */

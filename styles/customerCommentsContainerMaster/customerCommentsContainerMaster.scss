@@ -19,6 +19,11 @@
       height: calc(100% - 0.4rem);
       background-color: teal;
       color: #fff;
+      border: 1px solid #ffffff;
+      &:nth-child(1) {
+        background-color: #ccc !important;
+        color: #000 !important;
+      }
       font : {
         size: 2rem;
         weight: bold;
@@ -151,6 +156,67 @@
             position: absolute;
             bottom: 0.5rem;
             left: 0%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .customerCommentsContainerMaster {
+    width: 100%;
+    height: 418px;
+    margin: {
+      top: 3rem;
+    }
+    .btn-container {
+      width: 30%;
+      bottom: 0;
+      left: 35%;
+      z-index: 66;
+      button {
+        width: 40px;
+        height: 40px;
+        font : {
+          size: 1.5rem;
+          weight: 500;
+        }
+      }
+    }
+    .mainContainer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start !important;
+      .customerCommentsSlideContainer__aboutTeam__about {
+        width: 100%;
+        height: 56px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        span {
+          font-size: 20px !important;
+        }
+        line-height: 28px;
+      }
+      .customers_comment {
+        width: 100%;
+        height: 250px;
+        .item {
+          width: 100%;
+          height: 100%;
+          margin-top: 2rem;
+          .top {
+            .left {
+              width: 30%;
+              img {
+                width: 50%;
+                height: 100%;
+              }
+            }
           }
         }
       }

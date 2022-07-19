@@ -37,6 +37,9 @@
           justify-content: space-between;
   position: relative;
   top: 1vh;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin-top: -1rem;
 }
 
 .landing .landing__navBar .header__logo {
@@ -260,9 +263,36 @@
     height: -moz-max-content;
     height: max-content;
     background: none;
+    position: relative;
   }
   .landing .header__logo {
     display: none !important;
+  }
+  .landing #hamburgerMenuContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.72);
+    position: fixed;
+    z-index: -50;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin-top: -1rem;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    left: -80vw;
+    opacity: 0;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    -webkit-transition: 1s left ease;
+    transition: 1s left ease;
+    visibility: hidden;
   }
   .landing .landing__navBar {
     width: 100%;
@@ -301,7 +331,7 @@
     height: -moz-max-content;
     height: max-content;
     line-height: 50px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
     font-family: Montserrat-bold;
   }
