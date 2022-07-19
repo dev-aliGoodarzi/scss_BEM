@@ -100,4 +100,63 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+@media screen and (max-width: 400px) {
+  .beforeFooter {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    top: 2rem;
+  }
+  .beforeFooter .offerForm {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
+            box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
+  }
+  .beforeFooter .offerForm .offerForm__offerHelper {
+    width: 100%;
+  }
+  .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .beforeFooter .offerForm .inputContainer {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+  }
+  .beforeFooter .offerForm .inputContainer input,
+  .beforeFooter .offerForm .inputContainer button {
+    width: 100%;
+    height: 40px;
+  }
+  .beforeFooter .offerForm .inputContainer button {
+    margin-top: 1rem;
+  }
+}
 /*# sourceMappingURL=beforeFooter.css.map */

@@ -269,9 +269,26 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .workProcess .img-absolute {
-    display: none;
+    display: block;
+    position: relative;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 328px;
+    height: 217px;
   }
   .workProcess .workProcessInnerContainer {
     height: -webkit-max-content;

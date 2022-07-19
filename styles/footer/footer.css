@@ -204,4 +204,14 @@ footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen {
+  footer {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 10rem;
+  }
+}
 /*# sourceMappingURL=footer.css.map */
