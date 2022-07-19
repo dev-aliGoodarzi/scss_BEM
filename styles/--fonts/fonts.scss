@@ -33,16 +33,6 @@ body {
 
 @media screen and (max-width: 400px) {
   body {
-    padding: 1rem;
-    .landing {
-      .landing__navBar {
-        margin: {
-          top: -1rem;
-          left: -1rem;
-          right: -1rem;
-        }
-      }
-    }
     .swiper-pg {
       display: none !important;
     }

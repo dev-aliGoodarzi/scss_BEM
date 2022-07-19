@@ -67,15 +67,6 @@
       display: flex;
       flex-direction: column;
       align-content: center;
-      .levelsContainer {
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .level {
-        }
-      }
       .levelDescriptionContainer {
         width: 100%;
         height: 90%;
@@ -89,6 +80,37 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-between;
+          .level {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            line-height: 28px;
+            font : {
+              family: "Montserrat";
+              style: normal;
+              weight: 700;
+              size: 22px;
+            }
+            .levelNumber {
+              position: absolute;
+              width: 20%;
+              height: max-content;
+              left: 65%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #dddddd;
+              z-index: -1;
+
+              font : {
+                size: 52px;
+              }
+            }
+          }
           .part {
             width: 100%;
             height: 20%;
@@ -145,6 +167,97 @@
                 justify-content: flex-start;
                 font : {
                   family: Montserrat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .workProcess {
+    width: 100%;
+    height: max-content;
+
+    .img-absolute {
+      display: none;
+    }
+    .workProcessInnerContainer {
+      height: max-content;
+      width: 100%;
+      margin: {
+        top: 40px;
+      }
+      .top {
+        width: 100%;
+        .workProcess__aboutTeam__about {
+          width: 100%;
+          height: max-content;
+          span {
+            &:nth-child(2) {
+              font : {
+                size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .bottomInnerItems {
+        width: 100%;
+        height: max-content;
+        .levelDescriptionContainer {
+          width: 100% !important;
+          height: max-content;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          margin: {
+            top: 40px;
+          }
+          .levelContainer {
+            width: 100%;
+            .level {
+              width: calc(100% - 2rem);
+              border: {
+                bottom: 2px solid #dddddd;
+              }
+            }
+            .part {
+              width: 100%;
+              height: max-content;
+              margin-top: 1rem;
+              box-sizing: border-box;
+              padding: 1rem;
+              .top {
+                width: 100%;
+                height: max-content;
+                .boxi {
+                  width: 1rem;
+                  height: 1rem;
+                }
+                .content {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 24px;
+                  color: #000;
+                }
+              }
+              .bottom {
+                width: 100%;
+                height: max-content;
+                .tx {
+                  height: max-content;
+                  position: relative;
+                  color: #666666;
+                  margin: {
+                    top: 0.9rem;
+                    left: 0.3rem;
+                  }
                 }
               }
             }
