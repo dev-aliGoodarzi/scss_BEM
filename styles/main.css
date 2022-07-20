@@ -391,7 +391,7 @@ main .level3Stick .part:first-child {
     height: 338px;
   }
   main .landing .loadigContainer .landing__imageContainer::after {
-    width: 110%;
+    width: 100%;
     height: 228px;
     top: 57px;
     left: -5%;
@@ -636,6 +636,9 @@ main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresCo
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   main .humanResouresContainer .humanResouresContainer__aboutTeam {
     width: 100%;
@@ -1011,6 +1014,9 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment .item .b
     width: 100%;
     height: 418px;
     margin-top: 3rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   main .customerCommentsContainerMaster .btn-container {
     width: 30%;
@@ -1351,6 +1357,9 @@ main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescription
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   main .workProcess .img-absolute {
     display: block;
@@ -1746,6 +1755,10 @@ footer .footer__bottom .linksContainer {
           justify-content: space-between;
 }
 
+footer .footer__bottom .linksContainer .line {
+  display: none;
+}
+
 footer .footer__bottom .linksContainer a {
   color: #ffffff;
   font-size: 18px;
@@ -1828,10 +1841,187 @@ footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about
 @media screen {
   footer {
     width: 100%;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    position: relative;
+    top: 10rem;
+  }
+  footer .line {
+    width: 100%;
+    height: 50px;
+    top: 1%;
+  }
+  footer .footer__top {
+    width: 100%;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__top p {
+    width: 80%;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    margin-top: 10rem;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  footer .footer__top .top__iconsContainer {
+    width: 80%;
+    height: 48px;
+    margin-top: 2rem;
+  }
+  footer .footer__top .top__iconsContainer a {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  footer .footer__bottom {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer__bottom .linksContainer {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3rem;
+  }
+  footer .footer__bottom .linksContainer a {
+    height: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 28px;
+  }
+  footer .footer__bottom .contactsInfo {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    position: relative;
+  }
+  footer .footer__bottom .contactsInfo .liney {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 8%;
+    z-index: 888;
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container .contactItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin-top: 5rem;
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container .contactItem img {
+    width: 3.2rem;
+    height: 3.2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about p:nth-child(1) {
+    color: #dddddd;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about p:nth-child(2) {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

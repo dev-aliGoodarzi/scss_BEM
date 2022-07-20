@@ -314,6 +314,9 @@
     width: 100%;
     height: 418px;
     margin-top: 3rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   .customerCommentsContainerMaster .btn-container {
     width: 30%;

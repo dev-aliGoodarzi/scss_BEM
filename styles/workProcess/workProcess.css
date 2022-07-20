@@ -279,6 +279,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   .workProcess .img-absolute {
     display: block;

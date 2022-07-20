@@ -184,6 +184,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
     .img-absolute {
       display: block;
       position: relative;

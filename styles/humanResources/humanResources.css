@@ -236,6 +236,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
   }
   .humanResouresContainer .humanResouresContainer__aboutTeam {
     width: 100%;
