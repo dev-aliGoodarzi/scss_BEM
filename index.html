@@ -58,14 +58,20 @@
             class="hamburgerMenuContainer__linksMasterContaier"
             id="ham_linksMaster"
           >
-            <div class="logo">IN.DESIGN</div>
-            <div class="links">
-              <a href="#" class="home">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Services</a>
-              <a href="#">Portfolio</a>
-              <a href="#">Contacts</a>
+            <div class="logo">
+              IN.DESIGN
+              <img src="icons/icon - close.png" class="closeBtn" alt="" />
             </div>
+            <div class="links" id="ham_links_container">
+              <a href="#" id="home" onclick="modifier(this.id)">Home</a>
+              <a href="#" id="aboutUs" onclick="modifier(this.id)">About Us</a>
+              <a href="#" id="services" onclick="modifier(this.id)">Services</a>
+              <a href="#" id="portfolio" onclick="modifier(this.id)"
+                >Portfolio</a
+              >
+              <a href="#" id="contacts" onclick="modifier(this.id)">Contacts</a>
+            </div>
+            <div class="reg-btn">Register / Login</div>
           </div>
         </div>
       </div>

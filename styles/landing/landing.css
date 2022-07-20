@@ -290,6 +290,118 @@
     -webkit-transition: 1s left ease;
     transition: 1s left ease;
     visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .logo {
+    background-image: url("../../images/landing-section/bg.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 56px;
+    color: #000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 20px;
+    position: relative;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .logo .closeBtn {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .links {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .links a {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 288px;
+    height: 40px;
+    padding-top: 0.3rem;
+    padding-left: 0.4rem;
+    line-height: 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .active {
+    background: #dddddd21;
+  }
+  .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .reg-btn {
+    width: 100%;
+    height: 44px;
+    background: #0d6b6a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
   }
   .landing .landing__navBar {
     width: 100%;
