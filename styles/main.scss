@@ -1,10 +1,11 @@
 @import "--fonts/fonts.scss";
 main {
+  @import "--fonts/fonts.scss";
   @import "landing/landing.scss";
   @import "humanResources/humanResources.scss";
   @import "customerCommentsContainerMaster/customerCommentsContainerMaster.scss";
   @import "workProcess/workProcess.scss";
   @import "beforeFooter/beforeFooter.scss";
 }
-@import "footer/footer.scss";
 
+@import "footer/footer.scss";
