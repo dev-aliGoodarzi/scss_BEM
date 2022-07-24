@@ -86,7 +86,7 @@
 }
 
 .landing .landing__navBar .header__items .header__items__links {
-  width: 70%;
+  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +97,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: -3%;
 }
 
 .landing .landing__navBar .header__items .btn {
@@ -218,18 +219,18 @@
 }
 
 .landing .loadigContainer .landing__imageContainer::after {
-  width: 297px;
+  width: 98% !important;
   height: 228px;
   position: absolute;
   z-index: -1;
   background-color: teal;
   content: "";
-  top: -5%;
-  left: -5%;
+  top: 0;
+  left: 2% !important;
 }
 
 .landing .loadigContainer .landing__imageContainer img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: relative;
 }
@@ -276,7 +277,6 @@
     opacity: 0;
     top: 0;
     left: 0;
-    margin-top: -1rem;
   }
   .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier {
     width: 80%;
@@ -314,7 +314,6 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 1rem;
-    padding-top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -325,6 +324,8 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat";
     position: relative;
   }
   .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .logo .closeBtn {
@@ -332,7 +333,6 @@
     height: 2rem;
     position: absolute;
     right: 5%;
-    top: 35%;
   }
   .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .links {
     width: 100%;

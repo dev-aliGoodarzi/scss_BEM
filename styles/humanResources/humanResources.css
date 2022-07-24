@@ -276,8 +276,9 @@
   }
   .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
     line-height: 32px;
+    width: 99%;
+    padding-bottom: 8vh;
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
   }

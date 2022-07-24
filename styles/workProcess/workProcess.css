@@ -284,14 +284,14 @@
     padding: 1rem;
   }
   .workProcess .img-absolute {
+    width: 99vw;
+    height: 217px;
     display: block;
     position: relative;
     top: 2rem;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 328px;
-    height: 217px;
   }
   .workProcess .workProcessInnerContainer {
     height: -webkit-max-content;

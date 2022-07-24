@@ -160,6 +160,10 @@ footer .footer__bottom .contactsInfo {
           justify-content: space-between;
 }
 
+footer .footer__bottom .contactsInfo .liney {
+  display: none;
+}
+
 footer .footer__bottom .contactsInfo .contactItem__container {
   width: 50%;
   display: -webkit-box;
@@ -209,7 +213,7 @@ footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about
           align-items: center;
 }
 
-@media screen {
+@media screen and (max-width: 400px) {
   footer {
     width: 100%;
     height: -webkit-max-content !important;

@@ -1,5 +1,5 @@
 .beforeFooter {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
 }
 
@@ -43,6 +43,9 @@
 }
 
 .beforeFooter .offerForm .offerForm__offerHelper span:first-of-type {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
@@ -53,9 +56,10 @@
 }
 
 .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
+  width: 99%;
   font-family: Montserrat-semi-bold;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .beforeFooter .offerForm .inputContainer {
@@ -103,7 +107,7 @@
 
 @media screen and (max-width: 400px) {
   .beforeFooter {
-    width: 100%;
+    width: 99vw !important;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -115,14 +119,15 @@
     height: 240px;
     position: relative;
     top: 5rem;
-    left: 0;
+    left: 0% !important;
     right: 0;
     bottom: 0;
     -webkit-box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
             box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
   }
   .beforeFooter .offerForm .offerForm__offerHelper {
-    width: 100%;
+    left: 0% !important;
+    width: 98vw;
   }
   .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
     font-family: "Montserrat";

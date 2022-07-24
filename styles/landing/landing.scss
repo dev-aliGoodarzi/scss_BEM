@@ -45,11 +45,12 @@
       align-items: center;
       justify-content: space-between;
       .header__items__links {
-        width: 70%;
+        width: 60%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-left: -3%;
       }
       .btn {
         width: 20%;
@@ -132,17 +133,17 @@
       align-items: center;
       justify-content: flex-end;
       &::after {
-        width: 297px;
+        width: 98% !important;
         height: 228px;
         position: absolute;
         z-index: -1;
         background-color: teal;
         content: "";
-        top: -5%;
-        left: -5%;
+        top: 0;
+        left: 2% !important;
       }
       img {
-        width: 100%;
+        width: 95%;
         height: 100%;
         position: relative;
       }
@@ -191,9 +192,6 @@
       opacity: 0;
       top: 0;
       left: 0;
-      margin: {
-        top: -1rem;
-      }
       .hamburgerMenuContainer__linksMasterContaier {
         width: 80%;
         height: 100%;
@@ -220,19 +218,19 @@
           box-sizing: border-box;
           padding: {
             left: 1rem;
-            top: 1rem;
           }
           display: flex;
           align-items: center;
           justify-content: flex-start;
           font-size: 20px;
+          font-weight: bold;
+          font-family: "Montserrat";
           position: relative;
           .closeBtn {
             width: 2rem;
             height: 2rem;
             position: absolute;
             right: 5%;
-            top: 35%;
           }
         }
         .links {

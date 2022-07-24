@@ -234,14 +234,39 @@
           width: 100%;
           height: 100%;
           margin-top: 2rem;
+          &:hover {
+            transform: scale(1);
+          }
           .top {
             .left {
-              width: 30%;
+              width: 40%;
               img {
-                width: 50%;
-                height: 100%;
+                width: 3.5rem;
+                height: 3.5rem;
               }
             }
+            .right {
+              div {
+                width: 100%;
+                height: 50%;
+                &:nth-child(1) {
+                  color: #000;
+                  font : {
+                    size: 1.2rem;
+                    family: Montserrat;
+                  }
+                }
+                &:nth-child(2) {
+                  color: rgba(104, 98, 98, 0.623);
+                  font : {
+                    size: 1rem;
+                  }
+                  margin-top: 0.5rem;
+                }
+              }
+            }
+          }
+          .bottom {
           }
         }
       }

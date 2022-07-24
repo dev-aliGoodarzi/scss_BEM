@@ -1,5 +1,5 @@
 .beforeFooter {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   .offerForm {
     width: 870px;
@@ -23,6 +23,7 @@
       left: 5%;
       span {
         &:first-of-type {
+          width: max-content;
           margin-right: 1rem;
           color: teal;
           font : {
@@ -35,10 +36,11 @@
           weight: bold;
         }
         &:nth-child(2) {
+          width: 99%;
           font : {
             family: Montserrat-semi-bold;
             weight: bold;
-            size: 2rem;
+            size: 1.8rem;
           }
         }
       }
@@ -78,7 +80,7 @@
 
 @media screen and (max-width: 400px) {
   .beforeFooter {
-    width: 100%;
+    width: 99vw !important;
     height: max-content;
     position: relative;
     top: 2rem;
@@ -87,12 +89,13 @@
       height: 240px;
       position: relative;
       top: 5rem;
-      left: 0;
+      left: 0% !important;
       right: 0;
       bottom: 0;
       box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
       .offerForm__offerHelper {
-        width: 100%;
+        left: 0% !important;
+        width: 98vw;
         span {
           &:nth-child(2) {
             font-family: "Montserrat";

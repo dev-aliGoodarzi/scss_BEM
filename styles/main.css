@@ -123,7 +123,7 @@ main .landing .landing__navBar .header__items {
 }
 
 main .landing .landing__navBar .header__items .header__items__links {
-  width: 70%;
+  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +134,7 @@ main .landing .landing__navBar .header__items .header__items__links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: -3%;
 }
 
 main .landing .landing__navBar .header__items .btn {
@@ -255,18 +256,18 @@ main .landing .loadigContainer .landing__imageContainer {
 }
 
 main .landing .loadigContainer .landing__imageContainer::after {
-  width: 297px;
+  width: 98% !important;
   height: 228px;
   position: absolute;
   z-index: -1;
   background-color: teal;
   content: "";
-  top: -5%;
-  left: -5%;
+  top: 0;
+  left: 2% !important;
 }
 
 main .landing .loadigContainer .landing__imageContainer img {
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: relative;
 }
@@ -313,7 +314,6 @@ main .level3Stick .part:first-child {
     opacity: 0;
     top: 0;
     left: 0;
-    margin-top: -1rem;
   }
   main .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier {
     width: 80%;
@@ -351,7 +351,6 @@ main .level3Stick .part:first-child {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 1rem;
-    padding-top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -362,6 +361,8 @@ main .level3Stick .part:first-child {
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat";
     position: relative;
   }
   main .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .logo .closeBtn {
@@ -369,7 +370,6 @@ main .level3Stick .part:first-child {
     height: 2rem;
     position: absolute;
     right: 5%;
-    top: 35%;
   }
   main .landing #hamburgerMenuContainer .hamburgerMenuContainer__linksMasterContaier .links {
     width: 100%;
@@ -788,8 +788,9 @@ main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresCo
   }
   main .humanResouresContainer .humanResouresContainer__aboutTeam .humanResouresContainer__aboutTeam__picturesAndContents .aboutNumberOfHumans p {
     line-height: 32px;
+    width: 99%;
+    padding-bottom: 8vh;
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
   }
@@ -1179,12 +1180,30 @@ main .customerCommentsContainerMaster .mainContainer .customers_comment .item .b
     height: 100%;
     margin-top: 2rem;
   }
+  main .customerCommentsContainerMaster .mainContainer .customers_comment .item:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left {
-    width: 30%;
+    width: 40%;
   }
   main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .left img {
-    width: 50%;
-    height: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right div {
+    width: 100%;
+    height: 50%;
+  }
+  main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right div:nth-child(1) {
+    color: #000;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+  }
+  main .customerCommentsContainerMaster .mainContainer .customers_comment .item .top .right div:nth-child(2) {
+    color: rgba(104, 98, 98, 0.623);
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1474,14 +1493,14 @@ main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescription
     padding: 1rem;
   }
   main .workProcess .img-absolute {
+    width: 99vw;
+    height: 217px;
     display: block;
     position: relative;
     top: 2rem;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 328px;
-    height: 217px;
   }
   main .workProcess .workProcessInnerContainer {
     height: -webkit-max-content;
@@ -1578,7 +1597,7 @@ main .workProcess .workProcessInnerContainer .bottomInnerItems .levelDescription
 }
 
 main .beforeFooter {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
 }
 
@@ -1622,6 +1641,9 @@ main .beforeFooter .offerForm .offerForm__offerHelper {
 }
 
 main .beforeFooter .offerForm .offerForm__offerHelper span:first-of-type {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-right: 1rem;
   color: teal;
   font-size: 2rem;
@@ -1632,9 +1654,10 @@ main .beforeFooter .offerForm .offerForm__offerHelper span {
 }
 
 main .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
+  width: 99%;
   font-family: Montserrat-semi-bold;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 main .beforeFooter .offerForm .inputContainer {
@@ -1682,7 +1705,7 @@ main .beforeFooter .offerForm .inputContainer button {
 
 @media screen and (max-width: 400px) {
   main .beforeFooter {
-    width: 100%;
+    width: 99vw !important;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -1694,14 +1717,15 @@ main .beforeFooter .offerForm .inputContainer button {
     height: 240px;
     position: relative;
     top: 5rem;
-    left: 0;
+    left: 0% !important;
     right: 0;
     bottom: 0;
     -webkit-box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
             box-shadow: -10px 10px 50px rgba(13, 107, 106, 0.08) !important;
   }
   main .beforeFooter .offerForm .offerForm__offerHelper {
-    width: 100%;
+    left: 0% !important;
+    width: 98vw;
   }
   main .beforeFooter .offerForm .offerForm__offerHelper span:nth-child(2) {
     font-family: "Montserrat";
@@ -1901,6 +1925,10 @@ footer .footer__bottom .contactsInfo {
           justify-content: space-between;
 }
 
+footer .footer__bottom .contactsInfo .liney {
+  display: none;
+}
+
 footer .footer__bottom .contactsInfo .contactItem__container {
   width: 50%;
   display: -webkit-box;
@@ -1950,7 +1978,7 @@ footer .footer__bottom .contactsInfo .contactItem__container .contactItem .about
           align-items: center;
 }
 
-@media screen {
+@media screen and (max-width: 400px) {
   footer {
     width: 100%;
     height: -webkit-max-content !important;
